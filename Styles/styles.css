@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body{
+    font-family: 'Raleway', sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+    background-color:  #e0e1dd;
+    color: #0d1b2a;
+
+}
+
+
+
+
+
+
+
+#landing-page {
+    background: #415a77;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+
+
+
+
+#context {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+}
+
+
+#context button {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30%; 
+    position: relative;
+}
+
+#context button:hover .fa-arrow-right {
+    transform: rotate(90deg);
+    transition: transform 0.6s ease;
+}
+
+
+#circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+#circles li :hover{
+    background-color: #415a77;
+}
+
+
+
+/* Portfolio */
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
