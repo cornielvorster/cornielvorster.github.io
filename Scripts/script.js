@@ -1,5 +1,6 @@
 function showMore() {
-    window.location.href = "../index.html#about"
+    window.location.href = "../index.html#about";
+
 }
 
 
